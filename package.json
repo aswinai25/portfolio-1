@@ -1,0 +1,27 @@
+{
+  "name": "aswin-portfolio",
+  "version": "1.0.0",
+  "description": "Modern portfolio website for Aswin - AI & Data Science Student",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000",
+    "build": "echo 'No build step needed for vanilla HTML/CSS/JS'"
+  },
+  "keywords": [
+    "portfolio",
+    "personal-website",
+    "ai",
+    "data-science",
+    "student"
+  ],
+  "author": "Aswin",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aswinai25/portfolio.git"
+  },
+  "dependencies": {
+    "leaflet": "^1.9.4"
+  }
+}

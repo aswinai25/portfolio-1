@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aswin — AI & Data Science Student | Future Software Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+    <div class="noise-bg"></div>
+    <div class="stars"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-cube"></i>
+                <span>ASWIN</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#journey">Journey</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#contact" class="hire-btn">Hire me <i class="fas fa-arrow-right"></i></a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="section hero-section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="available-badge">
+                        <span class="dot"></span>
+                        Available for internships · 2026
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Aswin</span>
+                    </h1>
+                    <p class="hero-subtitle">Future Software Engineer</p>
+                    <p class="hero-description">
+                        Passionate about Artificial Intelligence, Data Science, and Software Development. Currently pursuing B.Tech in AI & Data Science and continuously building technical skills to launch a successful career in the software industry.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View Portfolio</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i>
+                            <span>Contact Me</span>
+                        </a>
+                        <a href="#" class="btn btn-outline">
+                            <i class="fas fa-download"></i>
+                            <span>Resume</span>
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-value">8.47</span>
+                            <span class="stat-label">CGPA</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">2029</span>
+                            <span class="stat-label">Graduating</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">AI/DS</span>
+                            <span class="stat-label">B.Tech</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-card">
+                        <div class="glow-ring"></div>
+                        <img src="profile-aswin.jpg" alt="Portrait of Aswin" id="profileImage" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+                        <div class="neural-badge">
+                            <span>// NEURAL_LINK_ACTIVE</span>
+                            <span>v2025.1</span>
+                        </div>
+                    </div>
+                    <div class="tech-badges">
+                        <div class="tech-badge">
+                            <i class="fas fa-brain"></i>
+                            <span>AI</span>
+                        </div>
+                        <div class="tech-badge">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="tech-badge">
+                            <i class="fas fa-database"></i>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-label">// About me</span>
+                    <h2 class="section-title">
+                        <span class="gradient-text">Designed</span> by curiosity. <span class="gradient-text">Powered</span> by code.
+                    </h2>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Aswin is a dedicated B.Tech student specializing in Artificial Intelligence and Data Science. He is currently in his first year, second semester at Stella Mary's College of Engineering.</p>
+                        <p>Passionate about technology and software development, he continuously learns new concepts and tools to build a strong technical foundation. Outside academics, he enjoys listening to music and exploring emerging technologies.</p>
+                        <div class="goal-card">
+                            <i class="fas fa-target"></i>
+                            <div>
+                                <h3>Career Goal</h3>
+                                <p>To become a Software Engineer at a reputed technology company where I can contribute innovative solutions and continuously grow professionally.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <span class="info-label">Name</span>
+                            <span class="info-value">Aswin</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Date of Birth</span>
+                            <span class="info-value">23 September 2007</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Gender</span>
+                            <span class="info-value">Male</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Blood Group</span>
+                            <span class="info-value">A Positive</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Location</span>
+                            <span class="info-value">Kanyakumari, Tamil Nadu</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Status</span>
+                            <span class="info-value">B.Tech Student · 1st Year</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section education-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-label">// Education</span>
+                    <h2 class="section-title">
+                        Academic <span class="gradient-text">trajectory</span>
+                    </h2>
+                    <p class="section-description">A focused four-year path through AI, data and software engineering.</p>
+                </div>
+                <div class="education-stats">
+                    <div class="edu-stat">
+                        <i class="fas fa-chart-line"></i>
+                        <span class="stat-value">8.47</span>
+                        <span class="stat-label">Current CGPA</span>
+                    </div>
+                    <div class="edu-stat">
+                        <i class="fas fa-calendar"></i>
+                        <span class="stat-value">Sem 02</span>
+                        <span class="stat-label">Currently In</span>
+                    </div>
+                    <div class="edu-stat">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span class="stat-value">2029</span>
+                        <span class="stat-label">Graduating</span>
+                    </div>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker">2025</div>
+                        <div class="timeline-content">
+                            <h3>Joined B.Tech AI & Data Science</h3>
+                            <p>Started undergraduate program at Stella Mary's College of Engineering.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker">2026</div>
+                        <div class="timeline-content">
+                            <h3>2nd Semester · Current</h3>
+                            <p>Currently pursuing core CS, programming and AI fundamentals.</p>
+                            <span class="timeline-label">// Stella Mary's College of Engineering</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker">2029</div>
+                        <div class="timeline-content">
+                            <h3>Expected Graduation</h3>
+                            <p>Graduating with a B.Tech in AI & Data Science.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-label">// Skills</span>
+                    <h2 class="section-title">
+                        The current <span class="gradient-text">tech stack</span>
+                    </h2>
+                    <p class="section-description">Tools and abilities I actively use and continue to sharpen.</p>
+                </div>
+                <div class="skills-grid">
+                    <!-- Technical Skills -->
+                    <div class="skills-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-code"></i> Technical
+                        </h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <i class="fab fa-python"></i>
+                                    <span>Python</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%; background: linear-gradient(90deg, #00d4ff, #7c3aed);"></div>
+                                </div>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <i class="fas fa-database"></i>
+                                    <span>MySQL</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 65%; background: linear-gradient(90deg, #00d4ff, #7c3aed);"></div>
+                                </div>
+                                <span class="skill-percentage">65%</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <i class="fab fa-github"></i>
+                                    <span>GitHub</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%; background: linear-gradient(90deg, #00d4ff, #7c3aed);"></div>
+                                </div>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <i class="fas fa-code-branch"></i>
+                                    <span>VS Code</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%; background: linear-gradient(90deg, #00d4ff, #7c3aed);"></div>
+                                </div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Soft Skills -->
+                    <div class="skills-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-users"></i> Soft Skills
+                        </h3>
+                        <div class="soft-skills-grid">
+                            <div class="soft-skill">
+                                <i class="fas fa-comments"></i>
+                                <span>Communication</span>
+                            </div>
+                            <div class="soft-skill">
+                                <i class="fas fa-handshake"></i>
+                                <span>Teamwork</span>
+                            </div>
+                            <div class="soft-skill">
+                                <i class="fas fa-lightbulb"></i>
+                                <span>Problem Solving</span>
+                            </div>
+                            <div class="soft-skill">
+                                <i class="fas fa-crown"></i>
+                                <span>Leadership</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Journey Section -->
+        <section id="journey" class="section journey-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-label">// Learning</span>
+                    <h2 class="section-title">
+                        Current <span class="gradient-text">learning journey</span>
+                    </h2>
+                    <p class="section-description">As a first-year AI & Data Science student, I'm actively developing my technical expertise across these focus areas.</p>
+                </div>
+                <div class="journey-grid">
+                    <div class="journey-card">
+                        <div class="journey-number">01</div>
+                        <h3>Python Development</h3>
+                        <p>Core syntax, OOP and scripting for automation.</p>
+                    </div>
+                    <div class="journey-card">
+                        <div class="journey-number">02</div>
+                        <h3>SQL & Databases</h3>
+                        <p>Designing schemas and writing efficient queries.</p>
+                    </div>
+                    <div class="journey-card">
+                        <div class="journey-number">03</div>
+                        <h3>AI & Data Science</h3>
+                        <p>Foundations of ML, statistics and data handling.</p>
+                    </div>
+                    <div class="journey-card">
+                        <div class="journey-number">04</div>
+                        <h3>Git & GitHub</h3>
+                        <p>Version control workflows and open-source habits.</p>
+                    </div>
+                    <div class="journey-card">
+                        <div class="journey-number">05</div>
+                        <h3>Problem Solving</h3>
+                        <p>DSA fundamentals and algorithmic thinking.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-label">// Projects</span>
+                    <h2 class="section-title">
+                        Upcoming <span class="gradient-text">projects</span>
+                    </h2>
+                    <p class="section-description">Currently building skills and preparing to ship impactful work in AI, Data Science and Software Development.</p>
+                </div>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-brain"></i>
+                            <span class="project-tag">AI</span>
+                        </div>
+                        <h3>AI Project</h3>
+                        <p>An applied machine learning experiment.</p>
+                        <span class="coming-soon">Coming Soon</span>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image">
+                            <i class="fab fa-python"></i>
+                            <span class="project-tag">Python</span>
+                        </div>
+                        <h3>Python Project</h3>
+                        <p>Utility scripts & small applications.</p>
+                        <span class="coming-soon">Coming Soon</span>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-database"></i>
+                            <span class="project-tag">MySQL</span>
+                        </div>
+                        <h3>Database Project</h3>
+                        <p>End-to-end SQL & schema design.</p>
+                        <span class="coming-soon">Coming Soon</span>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-globe"></i>
+                            <span class="project-tag">Web</span>
+                        </div>
+                        <h3>Portfolio Website</h3>
+                        <p>This very site — built with care.</p>
+                        <span class="coming-soon">Coming Soon</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Aspirations Section -->
+        <section class="section aspirations-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-label">// Aspirations</span>
+                    <h2 class="section-title">
+                        The road to <span class="gradient-text">software engineer</span>
+                    </h2>
+                </div>
+                <div class="aspirations-content">
+                    <div class="aspiration-goal">
+                        <i class="fas fa-crosshairs"></i>
+                        <div>
+                            <h3>Future Software Engineer</h3>
+                            <p>To work in a reputed technology company and contribute to innovative software solutions while continuously expanding my knowledge in Artificial Intelligence and Software Engineering.</p>
+                        </div>
+                    </div>
+                    <div class="aspiration-phases">
+                        <div class="phase">
+                            <div class="phase-header">
+                                <span class="phase-number">Phase 01</span>
+                                <span class="phase-year">2025–2026</span>
+                            </div>
+                            <h4>Foundations</h4>
+                            <p>Master Python, SQL and core CS.</p>
+                        </div>
+                        <div class="phase">
+                            <div class="phase-header">
+                                <span class="phase-number">Phase 02</span>
+                                <span class="phase-year">2026–2027</span>
+                            </div>
+                            <h4>Applied AI</h4>
+                            <p>Build ML projects and data pipelines.</p>
+                        </div>
+                        <div class="phase">
+                            <div class="phase-header">
+                                <span class="phase-number">Phase 03</span>
+                                <span class="phase-year">2027–2028</span>
+                            </div>
+                            <h4>Real-world Builds</h4>
+                            <p>Open-source, internships, hackathons.</p>
+                        </div>
+                        <div class="phase">
+                            <div class="phase-header">
+                                <span class="phase-number">Phase 04</span>
+                                <span class="phase-year">2029+</span>
+                            </div>
+                            <h4>Software Engineer</h4>
+                            <p>Join a top-tier tech company.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-label">// Contact</span>
+                    <h2 class="section-title">
+                        Let's <span class="gradient-text">build something together</span>
+                    </h2>
+                    <p class="section-description">Open to internships, collaborations, and a good conversation about AI.</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <a href="mailto:a67662185@gmail.com" class="contact-link">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <span>Email</span>
+                                <strong>a67662185@gmail.com</strong>
+                            </div>
+                        </a>
+                        <a href="https://github.com/aswinai25" target="_blank" class="contact-link">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <span>GitHub</span>
+                                <strong>github.com/aswinai25</strong>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/aswin-u-61b69b391" target="_blank" class="contact-link">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <span>LinkedIn</span>
+                                <strong>linkedin.com/in/aswin-u-61b69b391</strong>
+                            </div>
+                        </a>
+                        <div class="contact-link">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <span>Location</span>
+                                <strong>Kanyakumari, Tamil Nadu, India</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="map" class="map-container"></div>
+                </div>
+                <div class="contact-form-container">
+                    <div class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="you@email.com" required>
+                        </div>
+                        <div class="form-group full">
+                            <label for="message">Message</label>
+                            <textarea id="message" placeholder="Tell me about your idea, internship, or just say hi…" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Send Message</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>ASWIN.AI</h3>
+                <p>Aswin · AI & Data Science Student · Future Software Engineer</p>
+            </div>
+            <div class="footer-nav">
+                <h4>Navigate</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#journey">Journey</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Connect</h4>
+                <div class="social-links">
+                    <a href="mailto:a67662185@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/aswinai25" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/aswin-u-61b69b391" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Aswin · Built with intent & neon.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
